@@ -1,13 +1,13 @@
 cask "peye" do
-  version "1.4.2"
+  version "1.4.3"
 
   on_arm do
     url "https://github.com/tackish/pigeoneye/releases/download/v#{version}/PigeonEye-darwin-arm64.tar.gz"
-    sha256 "1b5b3d2b8224c82badf599d700813c005627d4657383254a07258f45adcf5d1c"
+    sha256 "6d4ea5f32a0ee21c79d42780d0433870880f9fb3f52b66f7e1672fc72c4df9c8"
   end
   on_intel do
     url "https://github.com/tackish/pigeoneye/releases/download/v#{version}/PigeonEye-darwin-x86_64.tar.gz"
-    sha256 "3096341451c5f942e90affc581ddc1381efa4f159b442b8dafcc850d31aca9e5"
+    sha256 "4dba1329f10519aabd41561bdcbb2da447d3f75e7c38d17ca67661bb1b1d0d73"
   end
 
   name "PigeonEye"
