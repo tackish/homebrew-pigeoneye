@@ -22,9 +22,9 @@ cask "peye" do
   # The app is ad-hoc signed but not notarized, so Homebrew's quarantine
   # flag makes Gatekeeper block the first launch. Clear it on install so
   # `peye` / double-click just work. (Drop this once we notarize.)
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/PigeonEye.app"]
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-dr", "com.apple.quarantine", "{{appdir}}/PigeonEye.app"]
   end
 
   zap trash: [
